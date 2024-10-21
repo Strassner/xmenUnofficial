@@ -2,6 +2,7 @@ import React from 'react';
 import {Card, Nav, Navbar} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
+import "./Header.css"
 
  
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -9,16 +10,16 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function Header(props) {
 
   return (
-    <Navbar bg={} xpand="lg" className="bg-body-tertiary">
+    <Navbar xpand="lg" className="bg-color-header">
       <Container>
-        <Navbar.Brand href="#home">Commerce Bank</Navbar.Brand>
+        <Navbar.Brand href="#home"><p className={"text-color"}>Commerce Bank</p></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-             <Nav.Link href="/loan">Loan</Nav.Link>
-            <Nav.Link href="/customer">Customer</Nav.Link>
+             <Nav.Link href="/loan"><p className={"text-color"}>Loan</p></Nav.Link>
+            <Nav.Link href="/customer"><p className={"text-color"}>Customer</p></Nav.Link>
 
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <NavDropdown title={<span className={"text-color"}>Dropdown</span>} id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
