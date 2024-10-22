@@ -44,8 +44,8 @@ function Loan_bk() {
        <tr>
           <td>{loan.loan_id}</td>
           <td>{loan.created_at}</td>
-          <td>{loan.loan_origin_amount}</td>
           <td>{loan.loan_current_amount}</td>
+          <td>{loan.loan_origin_amount}</td>
           <td>{loan.interest_rate}</td>
         </tr>
 
