@@ -18,10 +18,10 @@ function Login(){
                 id="floating-box"
             />
             <Form.Text id="text-align-left" muted>
-                Your password must be atleast 8 characters long with
+                Your password must be at least 8 characters long with
                 one special character and one number.
             </Form.Text>
-            <Button variant="primary" size="lg" id="login-button">
+            <Button variant="primary" size="lg" id="login-button" href="/loan">
                 Login
             </Button>
 
