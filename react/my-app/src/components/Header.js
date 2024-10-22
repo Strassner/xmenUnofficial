@@ -10,30 +10,24 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function Header(props) {
 
   return (
-    <Navbar xpand="lg" className="bg-color-header">
-      <Container>
-        <Navbar.Brand href="#home"><p className={"text-color"}>Commerce Bank</p></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-             <Nav.Link href="/loan"><p className={"text-color"}>Loan</p></Nav.Link>
-            <Nav.Link href="/customer"><p className={"text-color"}>Customer</p></Nav.Link>
-
-            <NavDropdown title={<span className={"text-color"}>Dropdown</span>} id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+      <Navbar xpand="lg" id="bg-color-header">
+        <img href="#home" src="https://www.commercebank.com/-/media/cb/images/about-us/mediakit-logos/2018cbcagreenverticalfdic.png?revision=752b4309-7352-4f8c-8255-5423fc8fb645&modified=20220506163118&h=50px&w=200px&hash=517A478D2E48B0D904DEE7CF91CEC977" width={300}></img>
+        <Container fluid>
+          <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto">
+              <Nav.Link href="/loan" id="text-color">Loan</Nav.Link>
+              <Nav.Link href="/customer" id="text-color">Customer</Nav.Link>
+              <NavDropdown title={<img src="https://static-00.iconduck.com/assets.00/profile-default-icon-2048x2045-u3j7s5nj.png" width={50}></img>} id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Account</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  Log Out
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
   );
 }
 
