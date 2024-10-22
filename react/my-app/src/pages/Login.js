@@ -21,7 +21,7 @@ function Login(){
                 Your password must be at least 8 characters long with
                 one special character and one number.
             </Form.Text>
-            <Button variant="primary" size="lg" id="login-button" href="/loan">
+            <Button variant="success"  size="lg" id="login-button" href="/loan">
                 Login
             </Button>
 
