@@ -6,7 +6,7 @@ import Loan from './pages/Loan';
 import Customer from './pages/Customer';
 import SaveLoan from './pages/SaveLoan';
 import Loan_bk from './pages/Loan_bk';
-
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
           <Route path="/loan" exact={true} element={<Loan_bk/>}/>
           <Route path="/loanForm" exact={true} element={<SaveLoan/>}/>
           <Route path="/customer" exact={true} element={<Customer/>}/>
+            <Route path="/login" exact={true} element={<Login/>}/>
         </Routes>
       </div>
   );
