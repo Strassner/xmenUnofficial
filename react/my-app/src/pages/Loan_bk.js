@@ -23,19 +23,19 @@ function Loan_bk() {
     navigate("/loanForm");  
   };
 
+  // <Button variant="success" onClick={movePage}>Create</Button>{' '}
+
   return (
     <div>
-
-        <Button variant="success" onClick={movePage}>Create</Button>{' '}
 
         <Table striped bordered hover>
       <thead>
         <tr>
           <th>#</th>
-          <th>loan_origin_amount</th>
-          <th>interest_rate</th>
-          <th>Username</th>
-          <th>created_at</th>
+          <th>Date Created</th>
+          <th>Amount Owed</th>
+          <th>Original Loan Amount</th>
+          <th>Interest Rate</th>
         </tr>
       </thead>
       <tbody>
@@ -43,10 +43,10 @@ function Loan_bk() {
        
        <tr>
           <td>{loan.loan_id}</td>
-          <td>{loan.loan_origin_amount}</td>
-          <td>{loan.interest_rate}</td>
-          <td>{loan.user_account.userName}</td>
           <td>{loan.created_at}</td>
+          <td>{loan.loan_origin_amount}</td>
+          <td>{loan.loan_current_amount}</td>
+          <td>{loan.interest_rate}</td>
         </tr>
 
        )}
