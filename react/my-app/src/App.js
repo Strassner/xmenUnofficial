@@ -17,6 +17,7 @@ function App() {
           <Route path="/loanForm" exact={true} element={<SaveLoan/>}/>
           <Route path="/customer" exact={true} element={<Customer/>}/>
           <Route path="/login" exact={true} element={<Login/>}/>
+            <Route path="/" exact={true} element={<Login/>}/>
         </Routes>
       </div>
   );
