@@ -11,7 +11,8 @@ import Login from './pages/Login';
 function App() {
   return (
       <div>
-        <Header/> 
+        <Header/>
+          <Login/>
         <Routes>
           <Route path="/loan" exact={true} element={<Loan_bk/>}/>
           <Route path="/loanForm" exact={true} element={<SaveLoan/>}/>
